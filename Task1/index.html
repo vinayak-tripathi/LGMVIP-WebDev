@@ -1,15 +1,14 @@
 <html>
   <head>
     <meta charset="UTF-8">
+    <script src="Javascript/scroll.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Task 1</title>
-    <script src='Javascript/e-calculator.js'></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="css/design.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -21,64 +20,10 @@
       font: 400 15px/1.8 "Lato", sans-serif;
       color: #fff;
     }
-    
-    .bgimg-1, .bgimg-2, .bgimg-3 {
-      position: relative;
-      opacity: 1;
-      background-attachment: fixed;
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
-    
-    }
-    .bgimg-1 {
-      background-image: url("Assets/intro.jpg");
-      min-height: 100%;
-    }
-    
-    .bgimg-2 {
-      background-image: url("bg2.png");
-      min-height: 400px;
-    }
-    
-    .bgimg-3 {
-      background-image: url("bg3.png");
-      min-height: 400px;
-    }
-    
-    .caption {
-      position: absolute;
-      left: 0;
-      top: 50%;
-      width: 100%;
-      text-align: center;
-      color: #000;
-    }
-    
-    .caption span.border {
-      background-color: #111;
-      color: #fff;
-      padding: 18px;
-      font-size: 25px;
-      letter-spacing: 10px;
-    }
-    
-    h3 {
-      letter-spacing: 5px;
-      text-transform: uppercase;
-      font: 20px "Lato", sans-serif;
-      color: #111;
-    }
-    
-    /* Turn off parallax scrolling for tablets and phones */
-    @media only screen and (max-device-width: 1024px) {
-      .bgimg-1, .bgimg-2, .bgimg-3 {
-        background-attachment: scroll;
-      }
-    }
     </style>
     </head>
-    <body>
+  
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
       <script>
       window.onscroll = function() {scrollFunction()};
 
@@ -94,8 +39,8 @@
         <div class="container">
     
           <!-- Brand -->
-          <a class="navbar-brand" href="#" target="_blank"></a>
-            <h1>ZIPPY</h1>
+          <a class="navbar-brand" href="#" target="_blank">
+            <h1 style="font-weight: bold;">AKSHAYA</h1>
           </a>
     
           <!-- Collapse -->
@@ -115,23 +60,23 @@
             <!-- Right -->
             <strong>
             <ul class="navbar-nav nav-flex-icons">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#" style="color: gold;">Home</a>
+                <li class="nav-item">
+                    <a class="nav-link" href="#home">Home</a>
                 </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Projects</a>
+                <li class="nav-item">
+                    <a class="nav-link" href="#projects">Projects</a>
                 </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Pricing</a>
+                <li class="nav-item">
+                    <a class="nav-link" href="#pricing">Pricing</a>
                 </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Team</a>
+                <li class="nav-item">
+                    <a class="nav-link" href="#team">Team</a>
                 </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Blog</a>
+                <li class="nav-item">
+                    <a class="nav-link" href="#blog">Blog</a>
                 </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Contact</a>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
                 </li>
             </ul>
         </strong>
@@ -150,26 +95,37 @@
           <div class="carousel-inner" role="listbox">
             <!-- Slide One - Set the background image for this slide in the line below -->
             <div class="carousel-item active" style="background-image: url('Assets/intro1.jpg')">
-              <div class="carousel-caption d-none d-md-block">
+              <!-- <div class="carousel-caption d-none d-md-block">
                 <b><h2 class="display-4">Mother Nature</h2></b>
                 <p class="lead">Our Earth is the only planet with the continuity of life
                     so it becomes more and more important to generate a sense of urgency of saving our mother earth from all sorts of planet harming activities.</p>
-              </div>
+              </div> -->
+              <div class="context">
+                <strong style="font-size:30px ;">Mother nature</strong>
+                <p class="lead">Our Earth is the only planet with the continuity of life
+                  so it becomes more and more important to generate a sense of urgency of saving our mother earth from all sorts of planet harming activities.</p>
+                  <button class="but_intro">Learn More</button>
+                  <button class="but_intro">Learn More</button>
+                </div>
             </div>
             <!-- Slide Two - Set the background image for this slide in the line below -->
             <div class="carousel-item" style="background-image: url('Assets/intro2.webp')">
-              <div class="carousel-caption d-none d-md-block">
-                <h2 class="display-4">Gift<br>of God</h2>
+              <div class="context">
+                <strong style="font-size:30px ;">Gift of nature</strong>
                 <p class="lead">Our Earth is the only planet with the continuity of life
-                     so it becomes more and more important to generate a sense of urgency of saving our mother earth from all sorts of planet harming activities.</p>
-              </div>
+                  so it becomes more and more important to generate a sense of urgency of saving our mother earth from all sorts of planet harming activities.</p>
+                  <button class="but_intro">Learn More</button>
+                  <button class="but_intro">Learn More</button>
+                </div>
             </div>
             <!-- Slide Three - Set the background image for this slide in the line below -->
             <div class="carousel-item" style="background-image: url('Assets/intro3.jpg')">
-              <div class="carousel-caption d-none d-md-block">
-                <h2 class="display-4">Nature<br>is Speaking</h2>
+              <div class="context">
+                <strong style="font-size:30px ;">Nature is speaking</strong>
                 <p class="lead">Our Earth is the only planet with the continuity of life
-                    so it becomes more and more important to generate a sense of urgency of saving our mother earth from all sorts of planet harming activities.</p>
+                  so it becomes more and more important to generate a sense of urgency of saving our mother earth from all sorts of planet harming activities.</p>
+                  <button class="but_intro">Learn More</button>
+                  <button class="but_intro">Learn More</button>
               </div>
             </div>
           </div>
@@ -183,41 +139,27 @@
               </a>
         </div>
       </header>
-    
-    <div style="color: #777;background-color:white;text-align:center;padding:50px 80px;text-align: justify;">
-      <h3 style="text-align:center;">Parallax Demo</h3>
-      <p>Parallax scrolling is a web site trend where the background content is moved at a different speed than the foreground content while scrolling. Nascetur per nec posuere turpis, lectus nec libero turpis nunc at, sed posuere mollis ullamcorper libero ante lectus, blandit pellentesque a, magna turpis est sapien duis blandit dignissim. Viverra interdum mi magna mi, morbi sociis. Condimentum dui ipsum consequat morbi, curabitur aliquam pede, nullam vitae eu placerat eget et vehicula. Varius quisque non molestie dolor, nunc nisl dapibus vestibulum at, sodales tincidunt mauris ullamcorper, dapibus pulvinar, in in neque risus odio. Accumsan fringilla vulputate at quibusdam sociis eleifend, aenean maecenas vulputate, non id vehicula lorem mattis, ratione interdum sociis ornare. Suscipit proin magna cras vel, non sit platea sit, maecenas ante augue etiam maecenas, porta porttitor placerat leo.</p>
-    </div>
-    
-    <div class="bgimg-2">
-      <div class="caption">
-      <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;">LESS HEIGHT</span>
-      </div>
-    </div>
-    
-    <div style="position:relative;">
-      <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
-      <p>Scroll up and down to really get the feeling of how Parallax Scrolling works.</p>
-      </div>
-    </div>
-    
-    <div class="bgimg-3">
-      <div class="caption">
-      <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;">SCROLL UP</span>
-      </div>
-    </div>
-    
-    <div style="position:relative;">
-      <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
-      <p>Scroll up and down to really get the feeling of how Parallax Scrolling works.</p>
-      </div>
-    </div>
-    
-    <div class="bgimg-1">
-      <div class="caption">
-      <span class="border">COOL!</span>
-      </div>
-    </div>
-    
-    
-    </body></html>
+      <main class="main-content">
+        <section id="home">
+          <h1>Welcome to Zippy</h1>
+          <p>This is a fork of the original by Danilo Bilanoski, updated to allow the sections to be placed inside a relative parent. See the JS file comments for details.</p>
+        </section>
+        <section id="projects">
+          <h1>Products</h1>
+        </section>
+        <section id="pricing">
+          <h1>Services</h1>
+        </section>
+        <section id="team">
+          <h1>Contact</h1>
+        </section>
+        <section id="blog">
+          <h1>Gallery</h1>
+        </section>
+        <section id="contact">
+          <h1>Contact</h1>
+        </section>
+      </main>
+      
+    </body>
+</html>

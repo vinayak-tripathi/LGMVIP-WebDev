@@ -1,3 +1,5 @@
+
+html { scroll-behavior: smooth;}
 .carousel-item {
     height: 100vh;
     min-height: 350px;
@@ -7,15 +9,47 @@
     -o-background-size: cover;
     background-size: cover;
   }
-
-  .carousel-caption {
-	position: absolute;
-	/* right: 15%; */
-	bottom: 301px;
-	left: 15%;
-	z-index: 10;
-	padding-top: 20px;
-	padding-bottom: 20px;
-	color: #fff;
-	text-align: center;
+.context {
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+.but_intro{
+  background-color: rgb(251, 226, 108);
+  border: 0;
+  padding: 5px;
+  margin-left: 4%;
+  margin-right: 4%;
+}
+.but_intro:hover{
+  transition: 200ms;
+  background-color: rgb(99, 72, 108);
+  color: aliceblue;
+  border: 0;
+  scale: 1.2;
+  padding: 5px;
+}
+section {
+ padding: 90px;
+  height: 100vh;
+}
+section:nth-child(1) {
+  background: lightblue;
+}
+section:nth-child(2) {
+  background: lightgreen;
+}
+section:nth-child(3) {
+  background: purple;
+}
+section:nth-child(4) {
+  background: red;
+}
+section:nth-child(5) {
+  background: yellow;
+}
+section:nth-child(5) {
+  background: skyblue;
 }
