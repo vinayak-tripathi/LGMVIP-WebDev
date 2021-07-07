@@ -1,5 +1,11 @@
 
 html { scroll-behavior: smooth;}
+body, html {
+      height: 100%;
+      margin: 0;
+      font: 400 15px/1.8 "Lato", sans-serif;
+      color: rgb(124, 124, 124);
+    }
 .carousel-item {
     height: 100vh;
     min-height: 350px;
@@ -9,15 +15,19 @@ html { scroll-behavior: smooth;}
     -o-background-size: cover;
     background-size: cover;
   }
+  p{
+    font-size:20px
+  }
 .context {
     left: 50%;
     position: absolute;
     top: 50%;
     transform: translate(-50%, -50%);
-    text-align: center;
+    color:black;
   }
 .but_intro{
   background-color: rgb(251, 226, 108);
+  border-radius: 6px;
   border: 0;
   padding: 5px;
   margin-left: 4%;
@@ -32,11 +42,11 @@ html { scroll-behavior: smooth;}
   padding: 5px;
 }
 section {
- padding: 90px;
-  height: 100vh;
+  padding: 10%
+  /* height: 100vh; */
 }
 section:nth-child(1) {
-  background: lightblue;
+  background: white;
 }
 section:nth-child(2) {
   background: lightgreen;
@@ -52,4 +62,34 @@ section:nth-child(5) {
 }
 section:nth-child(5) {
   background: skyblue;
+}
+.navbar-nav>.active{
+  color:gold;
+}
+.sec_head{
+  text-align:center;
+  font-weight: bold;
+}
+.header{
+  font-size:25px;
+  color: rgb(99, 72, 108);
+  font-weight: bold;
+}
+.card_icon {
+	height: 12%;
+	background-color: rgb(251, 226, 108);
+	border-radius: 50%;
+	height: 65px;
+	padding: 10px;
+}
+.col-sm-12{
+  margin-top: 20px;
+  width: 70%;
+}
+
+.custom-column {
+	background-color: rgb(255, 241, 255);
+	border-radius: 19px;
+	padding: 10px;
+	box-sizing: border-box;
 }

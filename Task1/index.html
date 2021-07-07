@@ -14,12 +14,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="CSS/main.css">
     <style>
-    body, html {
-      height: 100%;
-      margin: 0;
-      font: 400 15px/1.8 "Lato", sans-serif;
-      color: #fff;
+    .lead{
+      font-size:150%;
     }
+
     </style>
     </head>
   
@@ -35,12 +33,12 @@
         }
       } 
       </script>
-      <nav id="navbar" class="navbar fixed-top navbar-expand-lg navbar-dark" style="color: #fff;">
+      <nav id="navbar" class="navbar fixed-top navbar-expand-lg navbar-light">
         <div class="container">
     
           <!-- Brand -->
           <a class="navbar-brand" href="#" target="_blank">
-            <h1 style="font-weight: bold;">AKSHAYA</h1>
+            <h1 style="font-weight: bold;color:gold;">ZIPPY</h1>
           </a>
     
           <!-- Collapse -->
@@ -95,13 +93,8 @@
           <div class="carousel-inner" role="listbox">
             <!-- Slide One - Set the background image for this slide in the line below -->
             <div class="carousel-item active" style="background-image: url('Assets/intro1.jpg')">
-              <!-- <div class="carousel-caption d-none d-md-block">
-                <b><h2 class="display-4">Mother Nature</h2></b>
-                <p class="lead">Our Earth is the only planet with the continuity of life
-                    so it becomes more and more important to generate a sense of urgency of saving our mother earth from all sorts of planet harming activities.</p>
-              </div> -->
               <div class="context">
-                <strong style="font-size:30px ;">Mother nature</strong>
+                <strong style="font-size:40px ;font-weight: bold;">Mother nature</strong>
                 <p class="lead">Our Earth is the only planet with the continuity of life
                   so it becomes more and more important to generate a sense of urgency of saving our mother earth from all sorts of planet harming activities.</p>
                   <button class="but_intro">Learn More</button>
@@ -111,7 +104,7 @@
             <!-- Slide Two - Set the background image for this slide in the line below -->
             <div class="carousel-item" style="background-image: url('Assets/intro2.webp')">
               <div class="context">
-                <strong style="font-size:30px ;">Gift of nature</strong>
+                <strong style="font-size:40px ;font-weight: bold;">Gift of nature</strong>
                 <p class="lead">Our Earth is the only planet with the continuity of life
                   so it becomes more and more important to generate a sense of urgency of saving our mother earth from all sorts of planet harming activities.</p>
                   <button class="but_intro">Learn More</button>
@@ -121,7 +114,7 @@
             <!-- Slide Three - Set the background image for this slide in the line below -->
             <div class="carousel-item" style="background-image: url('Assets/intro3.jpg')">
               <div class="context">
-                <strong style="font-size:30px ;">Nature is speaking</strong>
+                <strong style="font-size:40px ;font-weight: bold;">Nature is speaking</strong>
                 <p class="lead">Our Earth is the only planet with the continuity of life
                   so it becomes more and more important to generate a sense of urgency of saving our mother earth from all sorts of planet harming activities.</p>
                   <button class="but_intro">Learn More</button>
@@ -141,8 +134,61 @@
       </header>
       <main class="main-content">
         <section id="home">
-          <h1>Welcome to Zippy</h1>
-          <p>This is a fork of the original by Danilo Bilanoski, updated to allow the sections to be placed inside a relative parent. See the JS file comments for details.</p>
+          <h1 class="sec_head">Welcome to Zippy</h1>
+          <div class="row" height="500px">
+            <div class="col-8">
+              <p>
+Earth is a beautiful living planet in the Universe and the common habitat of more than 7 billion human population and millions of species of biodiversity. Our Earth provides us with food, shelter and most of our requirements.
+
+Despite unavoidable free services provided by the earth to humans, we are not able to pay off her kindness to us. Rather we humans are being cruel to our Earth with our selfish activities.
+              </p>
+            </div>
+            <div class="col-4" style="height:330px">
+              <img src="Assets/tree.jpg" style="height:100%;" />
+            </div>
+          </div>
+          
+          <div class="container" style="margin-top: 50px;max-width: 70%;">
+            <div class="row">
+              <div class="col-sm-12 col-md-4" style="text-align: center;">
+                <div class="custom-column">
+                  <div class="header">
+                    <img src="Assets/bell.png" class="card_icon"><br>
+                    Notification
+                  </div>
+                  <div class="custom-column-content">
+                    Some quick example text to build on the card title and make up the bulk of the card's content.
+                  </div>
+                  <div class="custom-column-footer"><button class="but_intro">Click here</button></div>
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-4" style="text-align: center;">
+                <div class="custom-column">
+                  <div class="header">
+                    <img src="Assets/mail.png" class="card_icon"><br>
+                    Mail
+                  </div>
+                  <div class="custom-column-content">
+                    Some quick example text to build on the card title and make up the bulk of the card's content.
+                  </div>
+                  <div class="custom-column-footer"><button class="but_intro">Click here</button></div>
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-4" style="text-align: center;">
+                <div class="custom-column">
+                  <div class="header">
+                    <img src="Assets/database.png" class="card_icon"><br>
+                    Data
+                  </div>
+                  <div class="custom-column-content">
+                    Some quick example text to build on the card title and make up the bulk of the card's content.
+                  </div>
+                  <div class="custom-column-footer"><button class="but_intro">Click here</button></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
         </section>
         <section id="projects">
           <h1>Products</h1>
