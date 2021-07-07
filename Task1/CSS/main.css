@@ -4,7 +4,7 @@ body, html {
       height: 100%;
       margin: 0;
       font: 400 15px/1.8 "Lato", sans-serif;
-      color: rgb(124, 124, 124);
+      color: rgb(80, 77, 77);
     }
 .carousel-item {
     height: 100vh;
@@ -29,27 +29,27 @@ body, html {
   background-color: rgb(251, 226, 108);
   border-radius: 6px;
   border: 0;
-  padding: 5px;
+  padding: 8px;
   margin-left: 4%;
   margin-right: 4%;
+  margin-top: 3%;
 }
 .but_intro:hover{
   transition: 200ms;
-  background-color: rgb(99, 72, 108);
+  background-color: rgb(137, 99, 150);
   color: aliceblue;
   border: 0;
   scale: 1.2;
   padding: 5px;
 }
 section {
-  padding: 10%
-  /* height: 100vh; */
+	padding: 10% 10% 0% 10%;
 }
 section:nth-child(1) {
   background: white;
 }
 section:nth-child(2) {
-  background: lightgreen;
+  background: white;
 }
 section:nth-child(3) {
   background: purple;
@@ -72,7 +72,7 @@ section:nth-child(5) {
 }
 .header{
   font-size:25px;
-  color: rgb(99, 72, 108);
+  color: rgb(137, 99, 150);
   font-weight: bold;
 }
 .card_icon {
@@ -82,14 +82,77 @@ section:nth-child(5) {
 	height: 65px;
 	padding: 10px;
 }
-.col-sm-12{
+.col-sm-6{
   margin-top: 20px;
   width: 70%;
 }
-
 .custom-column {
 	background-color: rgb(255, 241, 255);
 	border-radius: 19px;
 	padding: 10px;
 	box-sizing: border-box;
+}
+
+
+.scrolling-wrapper::-webkit-scrollbar {
+  display: none;
+}
+.scrolling-wrapper {
+  overflow: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none; 
+}
+.col-3:hover{
+		scale: 1.03;
+		box-shadow: none;
+}
+.col-3{
+  height:400px;
+  background-color: rgb(224, 205, 95);
+	background-position: center;
+	background-size: cover;
+	transition: all 0.2s ease-in-out !important;
+}
+.col-5{
+  height:300px;
+  background-color: rgb(224, 205, 95);
+	border: 1px;
+	background-position: center;
+	background-size: cover;
+}
+.profile{
+  height:200px;
+  width: 200px;
+  background-image: url("../Assets/profile1.jpg");
+  /* background-color: rgba(137, 43, 226, 0); */
+  background-size: cover;
+  border-radius: 50%;
+}
+.social_links{
+  background-color: rgba(137, 43, 226, 0);
+  transition: all 0.5s ease-in-out !important;
+  height:200px;
+  width: 200px;
+  overflow: hidden"
+}
+.social_links:hover{
+  background-color: rgba(153, 88, 175, 0.616);
+  background-size: cover;
+  border-radius: 50%;
+}
+.social_links:hover > .social_icons{
+  display:inline;
+}
+.social_icons{
+  height: 20px;
+  width: 20px;
+  display: none;
+  transition: all 0.5s ease-in-out !important;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-image: url("../Assets/facebook.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position-x: center;
 }
