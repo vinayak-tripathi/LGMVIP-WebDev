@@ -1,7 +1,7 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <script src="Javascript/scroll.js"></script>
+    <script src="Javascript/main.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Task 1</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
@@ -17,7 +17,28 @@
     .lead{
       font-size:120%;
     }
-
+    /* .navbar-light .navbar-nav .active>.nav-link {
+      color:red;
+    } */
+    .navbar-light .navbar-nav .nav-link.active{
+      color:rgb(90, 2, 2);
+    }
+     /* .navbar-light .navbar-nav .nav-link.show{
+      color:green;
+    } */
+     /* .navbar-light .navbar-nav .show>.nav-link{
+      color: black;
+    } */
+    .card{
+      /* background-color: lightgray; */
+      transition: all 0.2s ease-in-out !important;
+    }
+    .card:hover{
+      background-color: rgb(203, 238, 195);
+    }
+    .card-text{
+      font-size:17px
+    }
     </style>
     </head>
   
@@ -193,157 +214,355 @@
             </div>
           </div>
         </section>
-        <section id="projects" style="padding: 10% 2%;">
+        <section id="projects" style="padding: 10% 4% 0% 4%;">
           <h1 class="sec_head">Projects</h1>
           <div class="scrolling-wrapper row flex-row flex-nowrap mt-4 pb-4 pt-2">
-            <div class="col-3">
-               1
+            <div class="proj">
+              <div class="card" style="width: 20rem;">
+                <img class="card-img-top" src="Assets/project1.jpeg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="header">Organic Ingredients</h5>
+                  <p class="card-text">
+                    "We must make organic the conventional choice and not the exception available only to the rich and educated."<br> ~ Maria Rodale
+                  </p>
+                  <button class="but_intro">Lauch Casestudy</button>
+                </div>
+              </div>
             </div>
-            <div class="col-3">
-               2  
+            <div class="proj">
+              <div class="card" style="width: 20rem;">
+                <img class="card-img-top" src="Assets/project2.jpeg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="header">Earth Day</h5>
+                  <p class="card-text">
+                    "Man must feel the earth to know himself and recognize his values. God made life simple. It is man who complicates it." <br>~ Charles Lindbergh
+                  </p>
+                  <button class="but_intro">Lauch Casestudy</button>
+                </div>
+              </div>  
             </div>
-            <div class="col-3">
-               3  
+            <div class="proj">
+              <div class="card" style="width: 20rem;">
+                <img class="card-img-top" src="Assets/project3.jpeg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="header">Mountains</h5>
+                  <p class="card-text">
+                    "Everyone wants to live on top of the mountain, but all the happiness and growth occurs while you're climbing it."<br> ~ Andy Rooney
+                  </p>
+                  <button class="but_intro">Lauch Casestudy</button>
+                </div>
+              </div>
             </div>
-            <div class="col-3">
-               4  
+            <div class="proj">
+              <div class="card" style="width: 20rem;">
+                <img class="card-img-top" src="Assets/project4.jpeg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="header">Save Earth</h5>
+                  <p class="card-text">
+                    "Green is my favorite. And it's my favorite because it's the color of my wife's eyes, grass, trees, life, and money, and mother earth!" <br>~ Casper Van Dien
+                  </p>
+                  <button class="but_intro">Lauch Casestudy</button>
+                </div>
+              </div>  
             </div>
-            <div class="col-3">
-               5  
+            <div class="proj">
+              <div class="card" style="width: 20rem;">
+                <img class="card-img-top" src="Assets/project5.jpeg" alt="Organic Ingredients">
+                <div class="card-body">
+                  <h5 class="header">Tree of Life</h5>
+                  <p class="card-text">
+                    "The tree of life is growing where the spirit never dies, and the bright light of salvation shines in dark and empty skies."<br> ~ Bob Dylan  
+                  </p>
+                  <button class="but_intro">Lauch Casestudy</button>
+                </div>
+              </div>  
             </div>
-            <div class="col-3">
-               6  
+            <div class="proj">
+              <div class="card" style="width: 20rem;">
+                <img class="card-img-top" src="Assets/project1.jpeg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="header">Organic Ingredients</h5>
+                  <p class="card-text">
+                    "We must make organic the conventional choice and not the exception available only to the rich and educated."<br> ~ Maria Rodale
+                  </p>
+                  <button class="but_intro">Lauch Casestudy</button>
+                </div>
+              </div>
             </div>
-            <div class="col-3">
-               7  
+            <div class="proj">
+              <div class="card" style="width: 20rem;">
+                <img class="card-img-top" src="Assets/project2.jpeg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="header">Earth Day</h5>
+                  <p class="card-text">
+                    "Man must feel the earth to know himself and recognize his values. God made life simple. It is man who complicates it." <br>~ Charles Lindbergh
+                  </p>
+                  <button class="but_intro">Lauch Casestudy</button>
+                </div>
+              </div>  
             </div>
-            <div class="col-3">
-               8  
-            </div>
-            <div class="col-3">
-               9  
-            </div>
-            <div class="col-3">
-               10  
+            <div class="proj">
+              <div class="card" style="width: 20rem;">
+                <img class="card-img-top" src="Assets/project3.jpeg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="header">Mountains</h5>
+                  <p class="card-text">
+                    "Everyone wants to live on top of the mountain, but all the happiness and growth occurs while you're climbing it."<br> ~ Andy Rooney
+                  </p>
+                  <button class="but_intro">Lauch Casestudy</button>
+                </div>
+              </div>
             </div>
           </div>
         </section>
         <section id="pricing">
           <h1 class="sec_head">Pricing Table</h1>
         </section>
-        <section style="background-color: rgb(137, 99, 150);padding: 10% 2%;">
+        <section style="background-color: rgb(137, 99, 150);padding: 10% 3% 4% 3%;">
           <h1 class="sec_head" style="color: white;">Video Projects</h1>
           <div class="scrolling-wrapper row flex-row flex-nowrap mt-4 pb-4 pt-2">
 			
-            <div class="col-5" style="margin:10px;">
-               1
+            <div class="col_video" style="margin:10px;">
+              <video id="episodeVideo" width="100%" controls>
+                <source src="Assets/video1.webm" type='video/mp4'/>
+              </video>              
             </div>
-            <div class="col-5" style="margin:10px;">
-               2  
+            <div class="col_video" style="margin:10px;">
+              <video id="episodeVideo" width="100%" controls>
+                <source src="Assets/video2.webm" type='video/mp4'/>
+              </video>  
             </div>
-            <div class="col-5" style="margin:10px;">
-               3  
+            <div class="col_video" style="margin:10px;">
+              <video id="episodeVideo" width="100%" controls>
+                <source src="Assets/video3.webm" type='video/mp4'/>
+              </video>     
             </div>
-            <div class="col-5" style="margin:10px;">
-               4  
+            <div class="col_video" style="margin:10px;">
+              <video id="episodeVideo" width="100%" controls>
+                <source src="Assets/video4.webm" type='video/mp4'/>
+              </video>   
             </div>
-            <div class="col-5" style="margin:10px;">
-               5  
+            <div class="col_video" style="margin:10px;">
+              <video id="episodeVideo" width="100%" controls>
+                <source src="Assets/video5.webm" type='video/mp4'/>
+              </video>   
             </div>
-            <div class="col-5" style="margin:10px;">
-               6  
+            <div class="col_video" style="margin:10px;">
+              <video id="episodeVideo" width="100%" controls>
+                <source src="Assets/video6.webm" type='video/mp4'/>
+              </video>  
             </div>
-            <div class="col-5" style="margin:10px;">
-               7  
-            </div>
-            <div class="col-5" style="margin:10px;">
-               8  
-            </div>
-            <div class="col-5" style="margin:10px;">
-               9  
-            </div>
-            <div class="col-5" style="margin:10px;">
-               10  
+            <div class="col_video" style="margin:10px;">
+              <video id="episodeVideo" width="100%" controls>
+                <source src="Assets/video7.webm" type='video/mp4'/>
+              </video>  
             </div>
           </div>
         </section>
-        <section id="team">
+        <section id="team" style="padding-bottom: 10%">
           <h1 class="sec_head">Zippy Team</h1>
           <div class="container" style="margin-top: 50px;max-width: 88%;">
             <div class="row" style="margin-left:auto;margin-right:auto;">
               <div class="col-sm-6 col-md-4" style="text-align: center;">
-                <div class="profile">
+                <div class="profile" style="background-image: url('Assets/profile1.jpg');">
                   <div class="social_links">
-                    <a href="#" class="social_icons" style="left: 25%;background-image: url('./Assets/facebook.png');"> </a>
-                    <a href="#" class="social_icons" style="left: 50%;background-image: url('./Assets/twitter.png');"> </a>
-                    <a href="#" class="social_icons" style="left: 75%;background-image: url('./Assets/google.png');"> </a>
+                    <a href="#" class="social_icons" id="social_fb"> </a>
+                    <a href="#" class="social_icons" id="social_t"> </a>
+                    <a href="#" class="social_icons" id="social_g"> </a>
                   </div>
+                </div>
+                <div style="color: rgb(65, 59, 70);">
+                  <strong>John Carter</strong><br>
+                  President
                 </div>
               </div>
               <div class="col-sm-6 col-md-4" style="text-align: center;">
-                <div class="profile">
+                <div class="profile" style="background-image: url('Assets/profile2.jpg');">
                   <div class="social_links">
-                    <a href="#" class="social_icons" style="left: 25%;background-image: url('./Assets/facebook.png');"> </a>
-                    <a href="#" class="social_icons" style="left: 50%;background-image: url('./Assets/twitter.png');"> </a>
-                    <a href="#" class="social_icons" style="left: 75%;background-image: url('./Assets/google.png');"> </a>
+                    <a href="#" class="social_icons" id="social_fb"> </a>
+                    <a href="#" class="social_icons" id="social_t"> </a>
+                    <a href="#" class="social_icons" id="social_g"> </a>
                   </div>
+                </div>
+                <div style="color: rgb(65, 59, 70);">
+                  <strong>Susan Brown</strong><br>
+                  Vice-president
                 </div>
               </div>
               <div class="col-sm-6 col-md-4" style="text-align: center;">
-                <div class="profile">
+                <div class="profile" style="background-image: url('Assets/profile3.jpg');">
                   <div class="social_links">
-                    <a href="#" class="social_icons" style="left: 25%;background-image: url('./Assets/facebook.png');"> </a>
-                    <a href="#" class="social_icons" style="left: 50%;background-image: url('./Assets/twitter.png');"> </a>
-                    <a href="#" class="social_icons" style="left: 75%;background-image: url('./Assets/google.png');"> </a>
+                    <a href="#" class="social_icons" id="social_fb"> </a>
+                    <a href="#" class="social_icons" id="social_t"> </a>
+                    <a href="#" class="social_icons" id="social_g"> </a>
                   </div>
+                </div>
+                <div style="color: rgb(65, 59, 70);">
+                  <strong>Brad Lewis</strong><br>
+                  Creative Head
                 </div>
               </div>
             </div>
             <div class="row" style="margin-left:auto;margin-right:auto;">
               <div class="col-sm-6 col-md-4" style="text-align: center;">
-                <div class="profile">
+                <div class="profile" style="background-image: url('Assets/profile4.jpg');">
                   <div class="social_links">
-                    <a href="#" class="social_icons" style="left: 25%;background-image: url('./Assets/facebook.png');"> </a>
-                    <a href="#" class="social_icons" style="left: 50%;background-image: url('./Assets/twitter.png');"> </a>
-                    <a href="#" class="social_icons" style="left: 75%;background-image: url('./Assets/google.png');"> </a>
+                    <a href="#" class="social_icons" id="social_fb"> </a>
+                    <a href="#" class="social_icons" id="social_t"> </a>
+                    <a href="#" class="social_icons" id="social_g"> </a>
                   </div>
+                </div>
+                <div style="color: rgb(65, 59, 70);">
+                  <strong>Jimmy Smith</strong><br>
+                  Technical Head
                 </div>
               </div>
               <div class="col-sm-6 col-md-4" style="text-align: center;">
-                <div class="profile">
+                <div class="profile" style="background-image: url('Assets/profile5.jpg');">
                   <div class="social_links">
-                    <a href="#" class="social_icons" style="left: 25%;background-image: url('./Assets/facebook.png');"> </a>
-                    <a href="#" class="social_icons" style="left: 50%;background-image: url('./Assets/twitter.png');"> </a>
-                    <a href="#" class="social_icons" style="left: 75%;background-image: url('./Assets/google.png');"> </a>
+                    <a href="#" class="social_icons" id="social_fb"> </a>
+                    <a href="#" class="social_icons" id="social_t"> </a>
+                    <a href="#" class="social_icons" id="social_g"> </a>
                   </div>
+                </div>
+                <div style="color: rgb(65, 59, 70);">
+                  <strong>Aliza</strong><br>
+                  Organizer
                 </div>
               </div>
               <div class="col-sm-6 col-md-4" style="text-align: center;">
-                <div class="profile">
+                <div class="profile" style="background-image: url('Assets/profile6.jpg');">
                   <div class="social_links">
-                    <a href="#" class="social_icons" style="left: 25%;background-image: url('./Assets/facebook.png');"> </a>
-                    <a href="#" class="social_icons" style="left: 50%;background-image: url('./Assets/twitter.png');"> </a>
-                    <a href="#" class="social_icons" style="left: 75%;background-image: url('./Assets/google.png');"> </a>
+                    <a href="#" class="social_icons" id="social_fb"> </a>
+                    <a href="#" class="social_icons" id="social_t"> </a>
+                    <a href="#" class="social_icons" id="social_g"> </a>
                   </div>
+                </div>
+                <div style="color: rgb(65, 59, 70);">
+                  <strong>Matt Alex</strong><br>
+                  Intern
                 </div>
               </div>
             </div>
           </div>
         </section>
-        <section>
+        <section style="background-color:rgb(239, 239, 239);padding-bottom:10%">
           <h1 class="sec_head">Life in Zippy</h1>
+          <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div id="custCarousel" class="carousel slide" data-ride="carousel" align="center">
+                        <!-- slides -->
+                        
+                        <div class="carousel-inner">
+                            <div class="carousel-item active" id="img_slide"><img src="https://i.imgur.com/weXVL8M.jpg" alt="Hills"> </div>
+                            <div class="carousel-item" id="img_slide"> <img src="https://i.imgur.com/Rpxx6wU.jpg" alt="Hills"> </div>
+                            <div class="carousel-item" id="img_slide"> <img src="https://i.imgur.com/83fandJ.jpg" alt="Hills"> </div>
+                            <div class="carousel-item" id="img_slide"> <img src="https://i.imgur.com/JiQ9Ppv.jpg" alt="Hills"> </div>
+                        </div>
+                         <!-- Left right --> 
+                         <a class="carousel-control-prev" href="#custCarousel" data-slide="prev"> <span class="carousel-control-prev-icon"></span> </a> 
+                         <a class="carousel-control-next" href="#custCarousel" data-slide="next"> <span class="carousel-control-next-icon"></span> </a> 
+                         <!-- Thumbnails -->
+                        <ol class="carousel-indicators list-inline">
+                            <li class="list-inline-item active"> <a id="carousel-selector-0" class="selected" data-slide-to="0" data-target="#custCarousel"> <img src="https://i.imgur.com/weXVL8M.jpg" class="img-fluid"> </a> </li>
+                            <li class="list-inline-item"> <a id="carousel-selector-1" data-slide-to="1" data-target="#custCarousel"> <img src="https://i.imgur.com/Rpxx6wU.jpg" class="img-fluid"> </a> </li>
+                            <li class="list-inline-item"> <a id="carousel-selector-2" data-slide-to="2" data-target="#custCarousel"> <img src="https://i.imgur.com/83fandJ.jpg" class="img-fluid"> </a> </li>
+                            <li class="list-inline-item"> <a id="carousel-selector-2" data-slide-to="3" data-target="#custCarousel"> <img src="https://i.imgur.com/JiQ9Ppv.jpg" class="img-fluid"> </a> </li>
+                        </ol>
+                    </div>
+                </div>
+              </div>
+            </div>
         </section>
-        <section>
+        <section style="background-image: url('Assets/intro1.jpg');background-size: cover;padding-bottom: 10%;">
           <h1 class="sec_head">Newsletter SignUp</h1>
+          <div style="text-align: center;">
+            <input type="email" name="" id="email_input">
+            <input type="button" value="Subscribe" class="subscribe">
+          </div>
         </section>
         <section id="blog">
           <h1 class="sec_head">Blog</h1>
+          
         </section>
-        <section id="contact">
-          <h1 class="sec_head">Contact</h1>
+        <section id="contact" style="padding: 10% 0% 0% 0%;color:black">
+          <div class="row" style="margin-left:auto;margin-right:auto;background-image:url('Assets/map.png');background-size:cover;background-repeat: no-repeat;">
+            <div class="col-sm-12 col-md-6" style="height: 530px;">
+              
+            </div>
+            <div class="col-sm-12 col-md-6" style="height: 530px;background-color: rgb(251, 226, 108);padding:35px">
+              <h1 class="sec_head" style="text-align: left;">Contact</h1>
+              <ul style="list-style-type: none;padding-left: 0;">
+                <li>
+                  NAME<br>
+                <input type="text" class="contact_field" id="name">
+                </li>
+                <li>
+                  EMAIL ADDRESS<br>
+                <input type="email" class="contact_field" id="email">
+                </li>
+                <li>
+                  SUBJECT<br>
+                <input type="number" class="contact_field" id="subject">
+                </li>
+                <li>
+                  MESSAGE<br>
+                  <textarea rows="4" cols="50" class="contact_field" id="message" >
+                    </textarea>
+                </li>
+                <li>
+                  <input type="button" value="SEND" class="contact_field" id="send">
+                </li>
+              </ul>
+              
+            </div>
+          </div>
         </section>
       </main>
-      <footer></footer>
+      <footer style="background-color:rgb(34, 5, 71)">
+        <div class="container" style="margin-top: 50px;max-width: 88%;">
+          <div class="row">
+            <div class="col-sm-12 col-md-4" style="text-align: center;">
+                <div class="foot_head">
+                  Address
+                </div>
+                <div class="custom-column-content" style="color:white">
+                  VT Complex,<br>
+                  Mumbai,<br>
+                  400001
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-4" style="text-align: center;">
+              <div class="foot_head">
+                Follow Us
+              </div>
+              <div class="custom-column-content" style="color:white">
+                <div class="footer_links">
+                  <a href="#" class="footer_icons" id="footer_fb"> </a>
+                  <a href="#" class="footer_icons" id="footer_t"> </a>
+                  <a href="#" class="footer_icons" id="footer_g"> </a>
+                </div>
+                <div class="footer_links">
+                  <a href="#" class="footer_icons" id="footer_ins"> </a>
+                  <a href="#" class="footer_icons" id="footer_lkd"> </a>
+                  <a href="#" class="footer_icons" id="footer_rdt"> </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-4" style="text-align: center;">
+              <div class="foot_head">
+                Contact Us
+              </div>
+              <div class="custom-column-content"  style="color:white">
+                +91 1234 56789<br>
+                zippy@skype<br>
+                enquiry@zippy.com
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
       
     </body>
 </html>
