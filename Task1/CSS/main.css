@@ -43,7 +43,7 @@ body, html {
   /* padding: 5px; */
 }
 section {
-	padding: 10% 10% 0% 10%;
+	padding: 100px 10% 20px 10%;
 }
 .nav-link nav>.active{
   color:gold;
@@ -67,6 +67,7 @@ section {
 .col-sm-6{
   margin-top: 20px;
   width: 70%;
+  margin: auto;
 }
 .custom-column {
 	background-color: rgb(255, 241, 255);
@@ -251,9 +252,12 @@ footer{
   height: 228px;
   /* width: 207%; */
 }
-#episodeVideo{
+.video{
   height: inherit;
   width: inherit;
+  height: 260px;
+  width: 400;
+  border:none;
 }
 .foot_head{
   font-size:22px;
