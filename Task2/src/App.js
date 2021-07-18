@@ -1,25 +1,51 @@
-import logo from './logo.svg';
+import Users from "./Components/card";
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import React, { Component } from 'react'
+	
+class App extends Component {
+  constructor(props){
+	super(props)
+		
+	// Set initial state
+	this.state = {greeting :[],
+                loading : true                
+  }
+  
+	// Binding this keyword
+	this.updateState = this.updateState.bind(this)
+  }
+    
+  updateState(){
+      console.log("VT");
+      document.getElementById("main").style.display='flex';
+      const link="https://reqres.in/api/users?page=1";
+      fetch(link)
+      .then(response => response.json())
+      .then((users) => {
+        
+        this.setState({greeting :users.data,
+                        loading: false
+        })
+        console.log(users.data);
+      })
+      .catch((error) => {
+        console.error(error)
+      })
+  }
+    
+  render(){
+    return (<>
+      <nav className="navbar navbar-expand-lg navbar-light">
+          <div className="container-fluid">
+            <h3>LetsGrowMore</h3>
+            <button onClick={this.updateState}>Get Users</button>
+          </div>
+        </nav>
+      <Users loading={this.state.loading} users={this.state.greeting}/>
+    </>
+    )
+  }
 }
-
+	
 export default App;
