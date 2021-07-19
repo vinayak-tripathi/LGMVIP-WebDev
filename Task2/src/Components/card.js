@@ -14,7 +14,7 @@ const Users = ({loading,users}) => {
                         <div className="profile">
                           <img src={user.avatar} alt={user.avatar} className="avatar"></img>
                           <h1 className="name">{user.first_name} {user.last_name}</h1>
-                          <p className="title">{user.email}</p>
+                          <p className="email">{user.email}</p>
                           <p>User ID: {user.id}</p>
                         </div>
                       </div>

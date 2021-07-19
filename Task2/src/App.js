@@ -8,7 +8,7 @@ class App extends Component {
 	super(props)
 		
 	// Set initial state
-	this.state = {greeting :[],
+	this.state = {users_data :[],
                 loading : true                
   }
   
@@ -24,7 +24,7 @@ class App extends Component {
       .then(response => response.json())
       .then((users) => {
         
-        this.setState({greeting :users.data,
+        this.setState({users_data :users.data,
                         loading: false
         })
         console.log(users.data);
@@ -42,7 +42,7 @@ class App extends Component {
             <button onClick={this.updateState}>Get Users</button>
           </div>
         </nav>
-      <Users loading={this.state.loading} users={this.state.greeting}/>
+      <Users loading={this.state.loading} users={this.state.users_data}/>
     </>
     )
   }
